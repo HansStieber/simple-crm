@@ -1,0 +1,14 @@
+{
+  "targets": {
+    "simple-crm-811cc": {
+      "hosting": {
+        "simple-crm": [
+          "simple-crm-811cc"
+        ]
+      }
+    }
+  },
+  "projects": {
+    "default": "simple-crm-811cc"
+  }
+}
