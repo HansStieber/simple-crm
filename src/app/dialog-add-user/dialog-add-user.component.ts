@@ -9,9 +9,9 @@ import { Firestore, collection, addDoc, CollectionReference } from '@angular/fir
   styleUrls: ['./dialog-add-user.component.scss']
 })
 export class DialogAddUserComponent {
+  firestore: Firestore = inject(Firestore)
   user = new User();
   birthDate!: Date;
-  firestore: Firestore = inject(Firestore)
   users: CollectionReference;
   loading: boolean = false;
 

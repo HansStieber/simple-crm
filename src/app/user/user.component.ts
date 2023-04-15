@@ -20,7 +20,6 @@ export class UserComponent implements OnInit {
   async ngOnInit(): Promise<void> {
     let coll = collection(this.firestore, 'users');
     collectionData(coll, {idField: 'id'}).subscribe((changes: any) => {
-      console.log(this.allUsers);
       this.allUsers = changes;
     })
   }
